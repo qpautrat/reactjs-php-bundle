@@ -1,0 +1,14 @@
+{
+    "name": "qpautrat/reactjs-php-bundle",
+    "description": "Render ReactJS component in server side using reactjs/react-php-v8js",
+    "type": "symfony-bundle",
+    "authors": [
+        {
+            "name": "Quentin Pautrat",
+            "email": "quentin.pautrat@gmail.com"
+        }
+    ],
+    "require": {
+        "reactjs/react-php-v8js": "dev-master"
+    }
+}
