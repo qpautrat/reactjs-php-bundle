@@ -1,7 +1,0 @@
-v8js:
-    image: stesie/v8js:latest
-    volumes:
-    - www:/var/www
-    ports:
-    - 9000:9000
-    command: php -S 0.0.0.0:9000 -t /var/www
