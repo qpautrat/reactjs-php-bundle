@@ -1,0 +1,1 @@
+docker run -p 9000:9000 -v /Users/qpautrat/Documents/Quentin/reactjs-php-bundle/www:/var/www reactjs-php-bundle
