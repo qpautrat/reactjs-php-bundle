@@ -9,6 +9,11 @@
         }
     ],
     "require": {
+        "symfony/framework-bundle": "~2.0",
+        "symfony/yaml": "~2.0",
         "reactjs/react-php-v8js": "dev-master"
+    },
+    "autoload": {
+        "psr-4": { "QPautrat\\ReactjsPhpBundle\\": "src" }
     }
 }

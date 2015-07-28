@@ -1,1 +1,8 @@
 vendor
+
+tests/app/cache
+tests/app/logs
+
+.DS_Store
+
+composer.lock
