@@ -8,7 +8,41 @@ Render ReactJS components in server side using reactjs/react-php-v8js
 
 ## Installation
 
+```bash
+composer require qpautrat/reactjs-php-bundle
+```
 
+## Configuration
+
+Register the bundle in your `AppKernel`
+
+```php
+new QPautrat\ReactjsPhpBundle\ReactjsPhpBundle()
+```
+
+Edit your `config.yml` file
+
+```yaml
+reactjs_php:
+    library_path: path_to_reactjs_library
+    app_path: path_to_app_components
+```
+
+## Usage
+
+Use helper with php engine
+
+```php
+<?php echo $view['reactjs']->renderMarkup('Component', array('foo' => 'bar')) ?>
+<?php echo $view['reactjs']->renderJS('Component', '#dom_element', array('foo' => 'bar')) ?>
+```
+
+Or you can use our twig extension as well
+
+```html
+{{ 'Component'|reactjs_render_markup({'foo':'bar'}) }}
+{{ 'Component'|reactjs_render_js('#component', {'foo':'bar'}) }}
+```
 
 docker run --name reactjs-php-bundle -p 9000:9000 -v $PWD:/var/www/reactjs-php-bundle reactjs-php-bundle
 
