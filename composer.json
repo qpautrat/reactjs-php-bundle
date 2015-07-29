@@ -9,10 +9,17 @@
         }
     ],
     "require": {
+        "reactjs/react-php-v8js": "dev-master",
+        "symfony/http-kernel": "~2.0",
+        "twig/twig": "*",
+        "symfony/templating": "~2.0",
+        "symfony/dependency-injection": "~2.0",
+        "symfony/config": "~2.0"
+    },
+    "require-dev": {
         "symfony/framework-bundle": "~2.0",
         "symfony/yaml": "~2.0",
-        "symfony/twig-bundle": "~2.0",
-        "reactjs/react-php-v8js": "dev-master"
+        "symfony/twig-bundle": "~2.0"
     },
     "autoload": {
         "psr-4": { "QPautrat\\ReactjsPhpBundle\\": "src" }
