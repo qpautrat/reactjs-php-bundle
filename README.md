@@ -56,6 +56,8 @@ docker run --name reactjs-php-bundle -p 9000:9000 -v $PWD:/var/www/reactjs-php-b
 
 Go to `http://localhost:9000`
 
+## Contribute
+
 ## License
 
 This bundle is available under the MIT License
