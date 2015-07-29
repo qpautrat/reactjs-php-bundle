@@ -16,6 +16,6 @@ class HomeController extends Controller
             )
         );
 
-        return $this->render('home.html.php', array('data' => $data));
+        return $this->render('home.html.twig', array('data' => $data));
     }
 }

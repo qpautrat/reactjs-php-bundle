@@ -9,6 +9,7 @@ class AppKernel extends Kernel
     {
         return array(
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
+            new Symfony\Bundle\TwigBundle\TwigBundle(),
             new QPautrat\ReactjsPhpBundle\ReactjsPhpBundle(),
         );
     }

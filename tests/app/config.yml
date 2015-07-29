@@ -3,7 +3,7 @@ framework:
     router:
         resource: "%kernel.root_dir%/routing.yml"
     templating:
-        engines: ['php']
+        engines: ['php', 'twig']
 reactjs_php:
     library_path: %kernel.root_dir%/react.min.js
     app_path: %kernel.root_dir%/table.js

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>React page</title>
+  </head>
+  <body>
+
+    <div id="table">
+        {{ 'Table'|reactjs_render_markup(data) }}
+    </div>
+    <div id="table2">
+        {{ 'Table'|reactjs_render_markup(data) }}
+    </div>
+
+    <script type="text/javascript" src="react.min.js" />
+    <script type="text/javascript" src="table.js" />
+    <script>
+        {{ 'Table'|reactjs_render_js('#table', data, 'table') }}
+        {{ 'Table'|reactjs_render_js('#table', data, 'table2') }}
+    </script>
+  </body>
+</html>
