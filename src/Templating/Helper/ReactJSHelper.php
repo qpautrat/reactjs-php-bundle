@@ -25,7 +25,7 @@ class ReactJSHelper extends Helper
      * Render markup of given component.
      *
      * @param  string $component Component name
-     * @param  array  $props     Array of properties
+     * @param  array  $props     Optional. Array of properties
      *
      * @return string Markup
      */
@@ -41,13 +41,13 @@ class ReactJSHelper extends Helper
      * Render javascript of given component
      *
      * @param  string $component Component name
-     * @param  array  $props     Array of properties
      * @param  string $element   DOM element where to render component
+     * @param  array  $props     Optional. Array of properties
      * @param  string $variable  Optional. Name of variable on return
      *
      * @return string Javascript
      */
-    public function renderJS($component, $props = null, $element, $variable = null)
+    public function renderJS($component, $element, $props = null, $variable = null)
     {
         return $this->reactJs
             ->setComponent($component, $props)
@@ -57,6 +57,6 @@ class ReactJSHelper extends Helper
 
     public function getName()
     {
-        return 'reactjs_php';
+        return 'reactjs';
     }
 }

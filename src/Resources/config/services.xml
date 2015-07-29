@@ -6,13 +6,18 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <parameters>
         <parameter key="reactjs_php.reactjs.class">QPautrat\ReactjsPhpBundle\ReactJS</parameter>
-        <parameter key="reactjs_php.templating.helper.reactjs_helper.class">QPautrat\ReactjsPhpBundle\Templating\Helper\ReactJSHelper</parameter>
+        <parameter key="reactjs_php.templating.helper.reactjs.class">QPautrat\ReactjsPhpBundle\Templating\Helper\ReactJSHelper</parameter>
+        <parameter key="reactjs_php.twig.extension.reactjs.class">QPautrat\ReactjsPhpBundle\Twig\Extension\ReactJSExtension</parameter>
     </parameters>
     <services>
         <service id="reactjs_php.reactjs" class="%reactjs_php.reactjs.class%" />
-        <service id="reactjs_php.templating.helper.reactjs_helper" class="%reactjs_php.templating.helper.reactjs_helper.class%">
+        <service id="reactjs_php.templating.helper.reactjs" class="%reactjs_php.templating.helper.reactjs.class%">
             <tag name="templating.helper" alias="reactjs" />
             <argument type="service" id="reactjs_php.reactjs"/>
+        </service>
+        <service id="reactjs_php.twig.extension.reactjs" class="%reactjs_php.twig.extension.reactjs.class%" public="false">
+            <tag name="twig.extension" />
+            <argument type="service" id="reactjs_php.templating.helper.reactjs" />
         </service>
     </services>
 </container>
