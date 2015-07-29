@@ -17,8 +17,7 @@ class HomeController extends Controller
         );
 
         $rjs = $this->get('reactjs_php.reactjs');
-        $rjs->setComponent('Table', $data);
 
-        return $this->render('home.html.php', array('rjs' => $rjs));
+        return $this->render('home.html.php', array('rjs' => $rjs, 'data' => $data));
     }
 }

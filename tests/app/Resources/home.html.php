@@ -2,22 +2,21 @@
 <html>
   <head>
     <title>React page</title>
-    <!-- css and stuff -->
   </head>
   <body>
 
-    <!-- render server content here -->
-    <div id="page"><?php echo $rjs->getMarkup(); ?></div>
+    <div id="table">
+        <?php echo $rjs->renderMarkup('Table', $data); ?>
+    </div>
+    <div id="table2">
+        <?php echo $rjs->renderMarkup('Table', $data); ?>
+    </div>
 
     <script type="text/javascript" src="react.min.js" />
     <script type="text/javascript" src="table.js" />
     <script>
-    // client init/render
-    // this is a straight echo of the JS because the JS resources
-    // were loaded synchronously
-    // You may want to load JS async and wrap the return of getJS()
-    // in a function you can call later
-    <?php echo $rjs->getJS('#page', "GLOB"); ?>
+        <?php echo $rjs->renderJS('Table', $data, '#table', 'table'); ?>
+        <?php echo $rjs->renderJS('Table', $data, '#page2', 'table2'); ?>
     </script>
   </body>
 </html>
