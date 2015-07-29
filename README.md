@@ -12,21 +12,22 @@ Render ReactJS components in server side using reactjs/react-php-v8js
 composer require qpautrat/reactjs-php-bundle
 ```
 
-## Configuration
-
 Register the bundle in your `AppKernel`
 
 ```php
 new QPautrat\ReactjsPhpBundle\ReactjsPhpBundle()
 ```
 
-Edit your `config.yml` file
+## Configuration
+
+In your `config.yml` file
 
 ```yaml
 reactjs_php:
     library_path: path_to_reactjs_library
     app_path: path_to_app_components
 ```
+*NB: Configuration uses ```file_exists()```. Refer to PHP documentation to know which path you can use*
 
 ## Usage
 
