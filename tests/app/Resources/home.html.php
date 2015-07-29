@@ -9,6 +9,8 @@
     <!-- render server content here -->
     <div id="page"><?php echo $rjs->getMarkup(); ?></div>
 
+    <script type="text/javascript" src="react.min.js" />
+    <script type="text/javascript" src="table.js" />
     <script>
     // client init/render
     // this is a straight echo of the JS because the JS resources
