@@ -44,7 +44,16 @@ Or you can use our twig extension as well
 {{ 'Component'|reactjs_render_js('#component', {'foo':'bar'}) }}
 ```
 
+## Tests
+
+We provide a small app, living in a docker container, that you can use to test.
+
+```bash
+docker build -t reactjs-php-bundle .
 docker run --name reactjs-php-bundle -p 9000:9000 -v $PWD:/var/www/reactjs-php-bundle reactjs-php-bundle
+```
+
+Go to `http://localhost:9000`
 
 ## License
 
