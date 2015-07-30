@@ -5,6 +5,7 @@
     "version": "1.0.0-dev",
     "keywords": ["react", "reactjs", "php", "bundle", "symfony", "srr", "v8js"],
     "homepage": "https://github.com/qpautrat/reactjs-php-bundle",
+    "license": "MIT",
     "authors": [
         {
             "name": "Quentin Pautrat",
