@@ -20,18 +20,10 @@ class Configuration implements ConfigurationInterface
                 ->scalarNode('library_path')
                     ->isRequired()
                     ->cannotBeEmpty()
-                    ->validate()
-                    ->ifTrue(function($v) { return false === file_exists($v); })
-                        ->thenInvalid('File at %s does not exist')
-                    ->end()
                 ->end()
                 ->scalarNode('app_path')
                     ->isRequired()
                     ->cannotBeEmpty()
-                    ->validate()
-                    ->ifTrue(function($v) { return false === file_exists($v); })
-                        ->thenInvalid('File at %s does not exist')
-                    ->end()
                 ->end()
         ->end();
 
