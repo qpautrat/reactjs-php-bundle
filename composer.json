@@ -25,7 +25,7 @@
         "symfony/twig-bundle": "~2.0"
     },
     "suggest": {
-        "twig/twig": "Allow to use twig templating engine",
+        "twig/twig": "Allow to use twig templating engine"
     },
     "autoload": {
         "psr-4": { "QPautrat\\ReactjsPhpBundle\\": "src" }
