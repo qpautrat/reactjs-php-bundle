@@ -15,7 +15,6 @@
     "require": {
         "reactjs/react-php-v8js": "dev-master",
         "symfony/http-kernel": "~2.0",
-        "twig/twig": "*",
         "symfony/templating": "~2.0",
         "symfony/dependency-injection": "~2.0",
         "symfony/config": "~2.0"
@@ -24,6 +23,9 @@
         "symfony/framework-bundle": "~2.0",
         "symfony/yaml": "~2.0",
         "symfony/twig-bundle": "~2.0"
+    },
+    "suggest": {
+        "twig/twig": "Allow to use twig templating engine",
     },
     "autoload": {
         "psr-4": { "QPautrat\\ReactjsPhpBundle\\": "src" }
