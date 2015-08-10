@@ -24,5 +24,6 @@
     },
     "autoload": {
         "psr-4": { "QPautrat\\ReactjsPhpBundle\\": "src" }
-    }
+    },
+    "minimum-stability": "dev"
 }
