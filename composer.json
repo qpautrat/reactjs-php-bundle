@@ -2,7 +2,7 @@
     "name": "qpautrat/reactjs-php-bundle",
     "description": "Render ReactJS component in server side using reactjs/react-php-v8js",
     "type": "symfony-bundle",
-    "version": "1.0.0-dev",
+    "version": "1.0.0",
     "keywords": ["react", "reactjs", "php", "bundle", "symfony", "srr", "v8js"],
     "homepage": "https://github.com/qpautrat/reactjs-php-bundle",
     "license": "MIT",
