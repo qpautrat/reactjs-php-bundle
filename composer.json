@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "qpautrat/react-php-v8js": "1.0.0",
+        "reactjs/react-php-v8js": "dev-master",
         "symfony/http-kernel": "~2.0",
         "symfony/templating": "~2.0",
         "symfony/dependency-injection": "~2.0",
