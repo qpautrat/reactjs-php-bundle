@@ -19,11 +19,6 @@
         "symfony/dependency-injection": "~2.0",
         "symfony/config": "~2.0"
     },
-    "require-dev": {
-        "symfony/framework-bundle": "~2.0",
-        "symfony/yaml": "~2.0",
-        "symfony/twig-bundle": "~2.0"
-    },
     "suggest": {
         "twig/twig": "Allow to use twig templating engine"
     },

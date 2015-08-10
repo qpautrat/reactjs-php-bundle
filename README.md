@@ -20,14 +20,13 @@ new QPautrat\ReactjsPhpBundle\ReactjsPhpBundle()
 
 ## Configuration
 
-In your `config.yml` file
+Add in your `config.yml` file
 
 ```yaml
 reactjs_php:
     library_path: path_to_reactjs_library
     app_path: path_to_app_components
 ```
-*NB: Configuration uses ```file_exists()```. Refer to PHP documentation to know which path you can use*
 
 ## Usage
 
@@ -45,18 +44,9 @@ Or you can use our twig extension as well
 {{ 'Component'|reactjs_render_js('#component', {'foo':'bar'}) }}
 ```
 
-## Tests
+## Demo
 
-We provide a small app, living in a docker container, that you can use to test.
-
-```bash
-docker build -t reactjs-php-bundle .
-docker run --name reactjs-php-bundle -p 9000:9000 -v $PWD:/var/www/reactjs-php-bundle reactjs-php-bundle
-```
-
-Go to `http://localhost:9000`
-
-## Contribute
+We provide a small demo application in another [repository](https://github.com/qpautrat/demo-reactjs-php-bundle), living in a docker container, that you can use to test.
 
 ## License
 

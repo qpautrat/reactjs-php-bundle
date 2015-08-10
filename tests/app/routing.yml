@@ -1,3 +1,0 @@
-home:
-    pattern: /
-    defaults: { _controller: 'HomeController::homeAction' }
