@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "reactjs/react-php-v8js": "1.0.0",
+        "qpautrat/react-php-v8js": "1.0.0",
         "symfony/http-kernel": "~2.0",
         "symfony/templating": "~2.0",
         "symfony/dependency-injection": "~2.0",
@@ -24,11 +24,5 @@
     },
     "autoload": {
         "psr-4": { "QPautrat\\ReactjsPhpBundle\\": "src" }
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@github.com:qpautrat/react-php-v8js.git"
-        }
-    ]
+    }
 }
