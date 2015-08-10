@@ -12,6 +12,12 @@ Render ReactJS components in server side using reactjs/react-php-v8js
 composer require qpautrat/reactjs-php-bundle
 ```
 
+Whitelist following library in require section until maintainers release a version
+
+```json
+"reactjs/react-php-v8js": "*@dev"
+```
+
 Register the bundle in your `AppKernel`
 
 ```php
