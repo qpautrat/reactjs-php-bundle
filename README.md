@@ -1,6 +1,6 @@
 # reactjs-php-bundle
 
-Render ReactJS components in server side using reactjs/react-php-v8js
+Render ReactJS components in server side using [reactjs/react-php-v8js](https://github.com/reactjs/react-php-v8js)
 
 ## Prerequisites
 
