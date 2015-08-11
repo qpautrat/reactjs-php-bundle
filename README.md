@@ -12,7 +12,7 @@ Render ReactJS components in server side using [reactjs/react-php-v8js](https://
 composer require qpautrat/reactjs-php-bundle
 ```
 
-Whitelist following library in require section until maintainers release a version
+Whitelist following library in require section until maintainers release a version on packagist
 
 ```json
 "reactjs/react-php-v8js": "*@dev"
